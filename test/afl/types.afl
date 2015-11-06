@@ -1,0 +1,13 @@
+( terminal )
+[ process ]
+/ io /
+< decision >
+| predefined |
+~ document ~
+{ storage }
+C comment C
+$ manual input $
+` manual operation `
+@ display @
+.
+C blank lines separate flows C

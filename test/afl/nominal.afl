@@ -1,0 +1,21 @@
+(start)
+[My Operation]
+<Yes or No?> yes
+/Catch it/
+(end)
+
+
+
+
+
+(alternate)
+<Yes or No?>
+
+
+
+
+
+<Yes or No?> no
+|FOOBAR|
+`Fix it`
+[My Operation]

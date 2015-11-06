@@ -1,0 +1,11 @@
+'edit'
+{github jboss}
+/sources/
+|teamcity job|
+/config files/
+[target jboss host]
+(end)
+
+'servers, restart?'
+`start build`
+|teamcity job|

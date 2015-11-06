@@ -1,0 +1,33 @@
+<symbol id="process" overflow="visible">
+    <rect x="0" y="0" width="150" height="50" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="predefined" overflow="visible">
+    <path d="M 0 0 h 150 v 50 h -150 v -50 m 5 0 v 50 m 140 0 v -50 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="terminal" overflow="visible">
+    <path d="M 125 0 a 12.5 12.5 0 0 1 0 25 h -100 a 12.5 12.5 0 0 1 0 -25 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="io" overflow="visible">
+    <path d="M 25 0 h 125 l -25 50 h -125 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="decision" overflow="visible">
+    <path d="M 0 25 l 75 25 l 75 -25 l -75 -25 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="document" overflow="visible">
+    <path d="M 0 0 v 50 c 50 25 75 -15 150 -15 v -35 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="storage" overflow="visible">
+    <path d="M 150 0 a 25 25 0 0 0 0 50 h -125 a 25 25 0 0 1 0 -50 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="comment" overflow="visible">
+    <path d="M 150 0 h -150 v 50 h 150" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="manual_input" overflow="visible">
+    <path d="M 0 15 v 35 h 150 v -50 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="manual_operation" overflow="visible">
+    <path d="M 0 0 l 25 50 h 100 l 25 -50 z" style="stroke:#000000; fill: #ffffff" />
+</symbol>
+<symbol id="display" overflow="visible">
+    <path d="M 30 25 q 7.5 17.5 25 25 h 50 q 15 -25 0 -50 h -50 q -17.5 7.5 -25 25" style="stroke:#000000; fill: #ffffff" />
+</symbol>

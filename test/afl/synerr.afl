@@ -1,0 +1,10 @@
+(start)
++syntax error here+
+   [a]   
+[b] foo
+~c~ bar
+   /d/   
+
+
+~c~ snafu
+(e)

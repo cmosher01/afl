@@ -1,0 +1,28 @@
+{
+  "name": "afl",
+  "version": "1.0.0",
+  "description": "ANSI Flowchart Language",
+  "main": "index.js",
+  "keywords": [
+    "flowchart",
+    "compiler",
+    "SVG"
+  ],
+  "author": "Christopher A. Mosher <cmosher01@gmail.com>",
+  "license": "GPL-3.0",
+  "jspm": {
+    "dependencies": {
+      "dagre": "npm:dagre@^0.7.4",
+      "fs": "github:jspm/nodelibs-fs@^0.1.2",
+      "highland": "npm:highland@^2.5.1",
+      "http": "github:jspm/nodelibs-http@^1.7.1",
+      "url": "github:jspm/nodelibs-url@^0.1.0",
+      "xml-writer": "npm:xml-writer@^1.6.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
