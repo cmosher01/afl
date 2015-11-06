@@ -25,7 +25,9 @@ WORKDIR $HOME
 
 
 # update npm
-RUN npm update --global
+# This was failing with:
+#   EXDEV: cross-device link not permitted, rename '/usr/local/lib/node_modules/npm' -> '/usr/local/lib/node_modules/.npm.DELETE'
+# RUN npm update --global
 
 # set up npm features
 RUN npm completion >>.bashrc
@@ -52,3 +54,19 @@ USER root
 RUN apt-get update && apt-get install --no-install-recommends -y git
 USER $USER
 RUN npm install jspm --global
+
+
+
+# copy program sources
+USER root
+COPY package.json ./
+COPY config.js ./
+COPY index.js ./
+COPY lib/ ./lib/
+COPY svg/ ./svg/
+RUN chown -R $USER: ./
+USER $USER
+
+CMD sh -c 'jspm install && jspm run index'
+
+EXPOSE 8080
