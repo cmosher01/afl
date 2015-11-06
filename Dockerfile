@@ -67,6 +67,6 @@ COPY svg/ ./svg/
 RUN chown -R $USER: ./
 USER $USER
 
-CMD sh -c 'jspm install && jspm run index'
+CMD jspm install && jspm run index
 
 EXPOSE 8080
