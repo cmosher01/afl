@@ -61,12 +61,16 @@ RUN npm install jspm --global
 USER root
 COPY package.json ./
 COPY config.js ./
+RUN chown -R $USER: ./
+USER $USER
+RUN jspm install
+
+USER root
 COPY index.js ./
 COPY lib/ ./lib/
 COPY svg/ ./svg/
 RUN chown -R $USER: ./
 USER $USER
-RUN jspm install
 
 CMD jspm run index
 
