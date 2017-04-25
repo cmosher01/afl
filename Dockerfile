@@ -8,17 +8,9 @@ USER root
 RUN echo 'root:root' | chpasswd
 
 
-
-# set up non-privileged user
-ENV USER user
-ENV UID 500
-RUN groupadd -g $UID $USER
-ENV ALT_GID 1000
-RUN groupadd -g $ALT_GID alt_user
-ENV HOME /home/$USER
-RUN useradd -u $UID -s /bin/bash -m -d $HOME -g $USER -G $ALT_GID $USER
-RUN chown -R $USER: $(npm prefix --global)
-USER $USER
+RUN chown -R node $(npm prefix --global)
+USER node
+ENV HOME /home/node
 WORKDIR $HOME
 
 
@@ -45,8 +37,8 @@ RUN npm install jspm --global
 USER root
 COPY package.json ./
 COPY config.js ./
-RUN chown -R $USER: ./
-USER $USER
+RUN chown -R node: ./
+USER node
 RUN jspm install
 
 
@@ -56,8 +48,8 @@ USER root
 COPY index.js ./
 COPY lib/ ./lib/
 COPY svg/ ./svg/
-RUN chown -R $USER: ./
-USER $USER
+RUN chown -R node: ./
+USER node
 
 
 
